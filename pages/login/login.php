@@ -1,10 +1,7 @@
 <?php
 
-include "../../functions.inc.php";
-
-$pdo = new PDO("mysql:host=127.0.0.1;dbname=learning_app_php", "root", "", [
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-]);
+require "../../functions.inc.php";
+require "../../db.php";
 
 $err = null;
 
@@ -32,9 +29,11 @@ if($_SERVER['REQUEST_METHOD'] === "POST"){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
     <title>Document</title>
 </head>
 <body>
+    <h1>Login</h1>
     <form method="POST" action="login.php">
         <label>
             Username
