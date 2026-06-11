@@ -11,6 +11,7 @@ TABLES
       <li>birth_date DATE</li>
       <li>username VARCHAR(100)</li>
       <li>password VARCHAR(100)</li>
+      <li>admin INT(10) DEFAULT 0</li>
     </ul>
   </li>
 </ul>
@@ -18,5 +19,5 @@ TABLES
 
 FEATURES
 <ul>
-  <li>Login and Register functionality.</li>
+  <li>Login and Register functionality</li>
 </ul>
