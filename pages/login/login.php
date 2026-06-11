@@ -29,8 +29,8 @@ if($_SERVER['REQUEST_METHOD'] === "POST"){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../general.css">
-    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="../../assets/css/general.css">
+    <link rel="stylesheet" href="../../assets/css/auth.css">
     <title>Document</title>
 </head>
 <body>
@@ -39,11 +39,11 @@ if($_SERVER['REQUEST_METHOD'] === "POST"){
     <form method="POST" action="login.php">
         <div>
             <label for="username">Username*</label>
-            <input type="text" name="username" />
+            <input type="text" name="username" id="username"/>
         </div>
         <div>
             <label for="password">Password*</label>
-            <input type="password" name="password" />
+            <input type="password" name="password" id="password"/>
         </div>
         <input type="submit" value="Submit"></input>
     </form>
